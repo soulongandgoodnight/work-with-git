@@ -107,11 +107,11 @@
 
 ```mermaid
 flowchart TD
-    A[untracked (неотследиваемый)] -- git add --> B[staged (в списке на коммит) + tracked];
-    C[modified (измененный)] -- git add --> B;
-    B -- изменения --> C;
-    B -- git commit --> D[tracked (отслеживаемый)];
-    D -- Изменения --> C;
+    A[untracked] -- git add --> B[staged + tracked];
+    C[modified] -- git add --> B;
+    B -- changes --> C;
+    B -- git commit --> D[tracked];
+    D -- Changes --> C;
 ```
 
 Какие статусы можно увидеть в git status:
